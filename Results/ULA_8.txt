@@ -1,0 +1,14 @@
+Evaluation Metrics FOR X:
+Mean Absolute Error: 74.36406449514722
+Mean Squared Error: 9493.030162203146
+Root Mean Squared Error: 97.43218237421938
+R2 Score: 0.9867467242285775
+
+Evaluation Metrics FOR Y:
+Mean Absolute Error: 133.96587655203683
+Mean Squared Error: 28142.49163721515
+Root Mean Squared Error: 167.75724019312892
+R2 Score: 0.9641100750225844
+
+Validation Mean Error: 165.92668615742693
+Test Mean Error: 164.97625751186834
