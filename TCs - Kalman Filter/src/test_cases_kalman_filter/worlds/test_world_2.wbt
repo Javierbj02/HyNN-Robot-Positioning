@@ -1,0 +1,103 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+  basicTimeStep 86
+}
+Viewpoint {
+  orientation -0.5527970669246133 0.5532374494086001 0.6231723095351811 2.026309766589707
+  position 0.011559196448539966 2.700408628008294 5.5408924393117385
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF EPUCK E-puck {
+  translation -1.36183 3.94731 -2.95099e-05
+  rotation 2.82339e-10 -3.54932e-09 -1 0.7574763061004254
+  controller "<extern>"
+  supervisor TRUE
+  version "2"
+}
+RectangleArena {
+  translation -0.812 3.404 7.10543e-15
+  name "rectangle arena(4)"
+  floorSize 1.25 1.25
+  floorTileSize 0.01 0.01
+  wallThickness 0.125
+}
+WoodenBox {
+  translation -0.465163 3.09486 0.025
+  name "wooden box(13)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.18059 3.08838 0.025
+  name "wooden box(12)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.3541 3.30438 0.025
+  name "wooden box(11)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -0.796524 3.04482 0.025
+  rotation 0 0 1 0.523599
+  name "wooden box(10)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -0.471167 3.43687 0.025
+  name "wooden box(9)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -0.652825 3.72573 0.025
+  name "wooden box(8)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -0.501454 3.95404 0.025
+  name "wooden box(7)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.10321 3.29456 0.025
+  name "wooden box(6)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -0.953347 3.42479 0.025
+  name "wooden box(5)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -0.862512 3.67569 0.025
+  name "wooden box(4)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.35582 3.76649 0.025
+  name "wooden box(3)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.23354 3.57097 0.025
+  name "wooden box(2)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.15626 3.80267 0.025
+  name "wooden box(1)"
+  size 0.05 0.05 0.05
+}
+WoodenBox {
+  translation -1.00687 3.86427 0.025
+  size 0.05 0.05 0.05
+}

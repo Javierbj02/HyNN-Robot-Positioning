@@ -1,0 +1,16 @@
+------------------------------------
+Test case: TC3. Configuration: ULA. Number of antennas: 16. Noise level: Low noise
+Average error of the path (Predicted - Real): 133.62347303278426 mm
+Average error of the path (Kalman - Real): 104.60421437894848 mm
+
+
+Mean Absolute Error (MAE) in X: 57.505505546194605
+Mean Absolute Error (MAE) in Y: 110.85040583376025
+Mean Squared Error (MSE) in X: 4885.677019313676
+Mean Squared Error (MSE) in Y: 19622.640152396238
+Root Mean Squared Error (RMSE) in X: 69.89761812332146
+Root Mean Squared Error (RMSE) in Y: 140.0808343507285
+
+Execution time: 48.09224081039429 seconds
+------------------------------------
+

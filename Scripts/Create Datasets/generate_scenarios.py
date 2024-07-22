@@ -31,15 +31,15 @@ def process_antennas(num_antennas, num_subcarriers, folder):
 
 
         # Create matrices to store the measurements
-        modulo = np.zeros((num_antennas, num_subcarriers))
-        angulo = np.zeros((num_antennas, num_subcarriers))
+        mod = np.zeros((num_antennas, num_subcarriers))
+        arg = np.zeros((num_antennas, num_subcarriers))
 
         # Fill the matrices with the measurements
-        for antena_idx, antena_measurement in enumerate(selected_antennas):
-            for portadora_idx in range(num_subcarriers):
-                portadora_measurement = measurements[antena_measurement][portadora_idx]
-                modulo[antena_idx][portadora_idx] = cmath.polar(portadora_measurement)[0]
-                angulo[antena_idx][portadora_idx] = cmath.polar(portadora_measurement)[1]
+        for antenna_idx, antenna_measurement in enumerate(selected_antennas):
+            for subcarrier_idx in range(num_subcarriers):
+                subcarrier_measurement = measurements[antenna_measurement][subcarrier_idx]
+                mod[antenna_idx][subcarrier_idx] = cmath.polar(subcarrier_measurement)[0]
+                arg[antenna_idx][subcarrier_idx] = cmath.polar(subcarrier_measurement)[1]
 
 
         pos_idx = int(filename.split('_')[2][:-4])
@@ -49,10 +49,10 @@ def process_antennas(num_antennas, num_subcarriers, folder):
         
         
         # Append the measurements to the row
-        for antena_idx in range(num_antennas):
-            for portadora_idx in range(num_subcarriers):
-                row.append(modulo[antena_idx][portadora_idx])
-                row.append(angulo[antena_idx][portadora_idx])
+        for antenna_idx in range(num_antennas):
+            for subcarrier_idx in range(num_subcarriers):
+                row.append(mod[antenna_idx][subcarrier_idx])
+                row.append(arg[antenna_idx][subcarrier_idx])
                 
         row.extend(user_coordinate[:2])
         rows.append(row)
@@ -60,10 +60,10 @@ def process_antennas(num_antennas, num_subcarriers, folder):
         
     # Create csv
     headers = []
-    for antena_idx in range(num_antennas):
-        for portadora_idx in range(num_subcarriers):
-            headers.append(f'Antenna{antena_idx + 1}Subcarrier{portadora_idx + 1}Module')
-            headers.append(f'Antenna{antena_idx + 1}Subcarrier{portadora_idx + 1}Angle')
+    for antenna_idx in range(num_antennas):
+        for subcarrier_idx in range(num_subcarriers):
+            headers.append(f'A{antenna_idx + 1}S{subcarrier_idx + 1}Mod')
+            headers.append(f'A{antenna_idx + 1}S{subcarrier_idx + 1}Arg')
     headers.extend(['PositionX', 'PositionY'])
 
     with open(f'{folder}_{num_antennas}.csv', 'w', newline='') as csvfile:
