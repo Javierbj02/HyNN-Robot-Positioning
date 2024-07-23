@@ -6,7 +6,7 @@ In order to do the evaluation of the proposal, through different experiments, it
 
 <div>
 <p align = "center">
-<img src="test_world_1.png" width="150">
+<img src="test_world_1.png" width="500">
 </p>
 </div>
 
