@@ -14,14 +14,16 @@ In order to do the evaluation of the proposal, through different experiments, it
 
 3. Associate the CSI readings (from full-data dataset) to that route positions.
 
-[a relative link](CSI_data_to_route_pos.ipynb)
+[Associate CSI Readings](CSI_data_to_route_pos.ipynb)
 
 4. Subsample the route positions to match the model predicition rate (predictions per seconds or frames per seconds). By this way, the robot will not do all the predictions of all the positions of the route (since in the simulator is possible), doing just by some of them, in accordance of frames per seconds.
 
-[a relative link](subsampling.ipynb)
+[Subsampling](subsampling.ipynb)
 
 5. Apply Gaussian noise to the CSI data, obtaining different noise level scenarios.
 
-[a relative link](apply_noise.ipynb)
+[Gaussian noise](apply_noise.ipynb)
 
-5. Launch the experiments, for different noise levels and different number of antennas, studying the integration of the Kalman filter or not.
+6. Launch the experiments, for different noise levels and different number of antennas, studying the integration of the Kalman filter or not.
+
+[Run experiments](../src/test_cases_kalman_filter/test_cases_kalman_filter/run_experiments.py)
