@@ -417,7 +417,7 @@ class RobotController(Node):
     def save_results_2(self):
         # * This method is used to save the positions of the robot during the route.
         # ! Define the path where the results will be stored
-        results = "/home/javi2002bj/Escritorio/TFG_Webots/TFG/TCs- Kalman Filter/Results/Results " + self.scenario.test_case
+        results = "TCs- Kalman Filter/Results/Results " + self.scenario.test_case
         df_positions = pd.DataFrame(self.pos_array)
         output_path = os.path.join(results, "route_positions.csv")
         df_positions.to_csv(output_path, index = False)

@@ -4,7 +4,7 @@
   <name>test_cases_kalman_filter</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="javier.ballesteros4@alu.uclm.es">javi2002bj</maintainer>
+  <maintainer email="javier.ballesteros@uclm.es">javi2002bj</maintainer>
   <license>Apache-2.0</license>
 
   <depend>rclpy</depend>

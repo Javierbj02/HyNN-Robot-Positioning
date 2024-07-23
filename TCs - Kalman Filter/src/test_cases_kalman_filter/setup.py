@@ -20,7 +20,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='javi2002bj',
-    maintainer_email='javier.ballesteros4@alu.uclm.es',
+    maintainer_email='javier.ballesteros@uclm.es',
     description='Package of the Test Cases with the localization algorithms of the Project',
     license='Apache-2.0',
     tests_require=['pytest'],
